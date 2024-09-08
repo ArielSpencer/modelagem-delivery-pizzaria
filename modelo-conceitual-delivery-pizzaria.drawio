@@ -1,0 +1,52 @@
+<mxfile host="65bd71144e">
+    <diagram id="a4bpUrjRzr6ryqSuqPsY" name="Página-1">
+        <mxGraphModel dx="751" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#424242;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="240" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Cliente" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Tahoma;fontColor=#424242;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="245" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#424242;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="240" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Pizza" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Tahoma;fontColor=#424242;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="245" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#424242;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="320" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Pedido" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Tahoma;fontColor=#424242;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="325" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#424242;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="320" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Itens_Pedido" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Tahoma;fontColor=#424242;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="325" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#424242;" vertex="1" parent="1">
+                    <mxGeometry x="480" y="240" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Bebida" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Tahoma;fontColor=#424242;" vertex="1" parent="1">
+                    <mxGeometry x="490" y="245" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#424242;" vertex="1" parent="1">
+                    <mxGeometry x="600" y="240" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Motoqueiro" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Tahoma;fontColor=#424242;" vertex="1" parent="1">
+                    <mxGeometry x="610" y="245" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#424242;" vertex="1" parent="1">
+                    <mxGeometry x="480" y="320" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Pagamento" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Tahoma;fontColor=#424242;" vertex="1" parent="1">
+                    <mxGeometry x="490" y="325" width="60" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
