@@ -7,6 +7,7 @@ body {
   font-family: "Poppins", system-ui;
   font-weight: 300;
   font-style: normal;
+  display: none;
 }
 
 .header {
@@ -27,7 +28,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   color: #333;
   font-size: 1.5rem;
 }
@@ -133,11 +135,12 @@ span {
   max-width: 100%;
 }
 
-.temp {
+.about {
   height: 50vh;
-  padding: 10%;
+  padding: 5% 10%;
 }
 
-.temp h2 {
-  padding-bottom: 35px;
+.about h2,
+h3 {
+  padding: 35px 0;
 }
