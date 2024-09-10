@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", system-ui;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header__container {
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1,
+h2 {
+  color: #333;
+  font-size: 1.5rem;
+}
+
+span {
+  color: #FF8401;
+}
+
+.header__nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.header__nav a {
+  color: #333;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.header__nav a:hover {
+  color: #EF8E00;
+}
+
+.header__btn .btn-contact {
+  background-color: #FF8401;
+  padding: 10px 20px;
+  border-radius: 35px;
+
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__btn .btn-contact:hover {
+  background-color: #EF8E00;
+}
+
+.banner {
+  background-color: #f4f4f4;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__content {
+  background-color: #ffffff;
+  height: 90vh;
+  width: 100vw;
+  padding: 0 5%;
+  display: flex;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+}
+
+.content-copy {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 50%;
+}
+
+.content-copy h1 {
+  color: #333333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.content-copy p {
+  color: #555555;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.banner__btn {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-download {
+  background-color: #FF8401;
+  padding: 10px 20px;
+  border-radius: 35px;
+
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn-download:hover {
+  background-color: #EF8E00;
+}
+
+.banner__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 50%;
+}
+
+.banner__image img {
+  max-width: 100%;
+}
+
+.temp {
+  height: 50vh;
+  padding: 10%;
+}
+
+.temp h2 {
+  padding-bottom: 35px;
+}
