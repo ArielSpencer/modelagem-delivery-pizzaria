@@ -201,3 +201,19 @@ h3 {
 .conceptual .list {
   background-color: #E1E1E1;
 }
+
+.logical {
+  background-color: #FFFFFF;
+  padding: 5% 10%;
+}
+
+.logical h2 {
+  padding: 35px 0 15px;
+}
+
+.logical__model {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10vh 0;
+}
