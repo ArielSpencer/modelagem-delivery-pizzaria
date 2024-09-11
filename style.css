@@ -217,3 +217,23 @@ h3 {
   text-align: center;
   padding: 10vh 0;
 }
+
+.footer {
+  background-color: #f4f4f4;
+  width: 100%;
+  padding: 20px;
+
+  color: #555555;
+  text-align: center;
+  font-weight: 300;
+}
+
+.footer a {
+  color: #FF8401;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.footer a:hover {
+  color: #EF8E00;
+}
