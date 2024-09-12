@@ -165,15 +165,41 @@
       </ul>
 
       <h3>Cardinalidades</h3>
-      <p>Limites e possibilidades de conexão entre as entidades dentro do modelo de dados.</p><br />
+      <p>
+        Limites e possibilidades de conexão entre as entidades dentro do modelo de dados, onde "N" representa um número
+        indefinido. O primeiro valor indica o número mínimo de instâncias e o segundo valor indica o número máximo.
+      </p>
+      <br />
       <ul class="list">
-        <li>Um <span>Cliente</span> pode fazer "N" <span>Pedidos</span>.</li>
-        <li>Um <span>Cliente</span> pode ter "N" <span>Telefones_Clientes</span>.</li>
-        <li>Um <span>Pedido</span> pode conter "N" <span>Itens_Pedido (pizzas ou bebidas)</span>.</li>
-        <li>Uma <span>Pizza</span> pode ter "N" <span>Ingredientes_Pizza</span>.</li>
-        <li>Um <span>Motoqueiro</span> pode entregar "N" <span>Pedidos</span>.</li>
-        <li>Um <span>Motoqueiro</span> pode ter "N" <span>Telefones_Motoqueiros</span>.</li>
-        <li>Um <span>Pagamento</span> pode ter "N" <span>Formas_Pagamento</span>.</li>
+        <li>
+          Um <span>Cliente</span> pode fazer "0" a "N" <span>Pedidos</span> e possuir "1" a "N"
+          <span>Telefones_Cliente</span>.
+        </li>
+
+        <li>
+          Cada <span>Pedido</span> deve estar associado a "1" <span>Cliente</span> e pode conter "1" a "N"
+          <span>Itens_Pedido (pizzas ou bebidas)</span>.
+        </li>
+
+        <li>
+          Um <span>Motoqueiro</span> pode entregar "0" a "N" <span>Pedidos</span> e possuir "1" a "N"
+          <span>Telefones_Motoqueiro</span>.
+        </li>
+
+        <li>
+          Um <span>Pagamento</span> deve estar associado a "1" <span>Pedido</span> e pode ter "1" a "N"
+          <span>Formas_Pagamento</span>.
+        </li>
+
+        <li>
+          Um <span>Itens_Pedido</span> deve estar associado a "1" <span>Pedido</span> e pode conter "0" a "N"
+          <span>Pizza</span> e "0" a "N" <span>Bebida</span>.
+        </li>
+
+        <li>
+          Uma <span>Pizza</span> pode ter "1" a "N" <span>Ingredientes_Pizza</span>.
+        </li>
+
       </ul>
 
     </section>
