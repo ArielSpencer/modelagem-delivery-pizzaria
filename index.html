@@ -110,13 +110,16 @@
         seguintes entidades foram definidas:</p><br />
       <ul class="list">
         <li><span>Cliente:</span> Armazena informações sobre os clientes que fazem pedidos. Cada cliente tem um ID
-          único, nome, endereço, telefone e email. A entidade Cliente está diretamente relacionada aos pedidos.</li>
+          único, nome, endereço, email e telefones (armazenados separadamente em uma tabela de
+          Telefones_Cliente). A entidade Cliente está diretamente relacionada aos pedidos.</li>
         <li><span>Pizza:</span> Representa os produtos principais do sistema. Cada pizza possui um ID, nome, tamanho,
-          preço e lista de ingredientes.</li>
+          preço e lista de ingredientes (relacionada a uma tabela de Ingredientes_Pizzas onde são listados os
+          componentes de cada pizza).</li>
         <li><span>Bebida:</span> Similar à Pizza, a entidade Bebida armazena informações sobre bebidas disponíveis para
           pedidos, incluindo ID, nome, tamanho e preço.</li>
         <li><span>Motoqueiro:</span> Motoqueiros são os responsáveis pela entrega dos pedidos. Cada motoqueiro tem um
-          ID, nome, número de placa da moto e telefones.</li>
+          ID, nome, número de placa da moto e telefones (relacionado a uma tabela de Telefones_Motoqueiros para
+          armazenar os números de contato).</li>
         <li><span>Pedido:</span> A entidade central que armazena todas as transações dos clientes. Cada pedido contém um
           ID único, o ID do cliente que fez o pedido, ID do motoqueiro que fez a entrega, valor total, a data e hora do
           pedido e o endereço de entrega.</li>
@@ -124,7 +127,8 @@
           pedido ao qual pertence, o ID do produto (pizza ou bebida), a quantidade, o preço unitário e o subtotal do
           item. O tipo de produto (pizza ou bebida) também é registrado para diferenciar os produtos.</li>
         <li><span>Pagamento:</span> Registra como os clientes pagaram por seus pedidos. Cada pagamento tem um ID, o ID
-          do pedido, o valor pago, troco (quando necessário) e a forma de pagamento.</li>
+          do pedido, o valor pago, troco (quando necessário) e a forma de pagamento (relacionado a uma tabela de
+          Formas_Pagamento).</li>
       </ul>
 
       <h3>Relacionamentos</h3>
@@ -132,21 +136,44 @@
       <ul class="list">
         <li>Um <span>Cliente</span> pode fazer vários <span>Pedidos</span>, mas cada <span>Pedido</span> está associado
           a apenas um <span>Cliente</span>.</li>
+
+        <li>Um <span>Cliente</span> pode ter múltiplos <span>Telefones</span>, que são armazenados na tabela
+          <span>Telefones_Cliente</span> e cada telefone está vinculado a apenas um <span>Cliente</span>.
+        </li>
+
         <li>Um <span>Pedido</span> pode incluir várias <span>Pizzas</span> e <span>Bebidas</span>, mas cada <span>item
             Pedido</span> está relacionado a um <span>Pedido</span>
           específico.</li>
+
+        <li>Cada <span>Pizza</span> contém múltiplos <span>Ingredientes</span>, que são armazenados na tabela
+          <span>Ingredientes_Pizzas</span> e cada ingrediente pode estar presente em diversas pizzas.
+        </li>
+
         <li>Um <span>Motoqueiro</span> pode realizar várias entregas, mas cada <span>Pedido</span> está associado a
           apenas um <span>Motoqueiro</span>.</li>
+
+        <li>Um <span>Motoqueiro</span> pode ter vários <span>Telefones</span>, que são armazenados na tabela
+          <span>Telefones_Motoqueiros</span>, onde cada telefone está vinculado a apenas um <span>Motoqueiro</span>.
+        </li>
+
         <li>Cada <span>Pedido</span> está associado a um <span>Pagamento</span>, mas um <span>Pagamento</span> está
           vinculado a apenas um <span>Pedido</span>.</li>
+
+        <li>Cada <span>Pagamento</span> tem pelo menos uma <span>Forma de Pagamento</span> armazenada na tabela
+          <span>Formas_Pagamento</span>. As formas de pagamento podem ser compartilhada entre vários pagamentos.
+        </li>
       </ul>
 
       <h3>Cardinalidades</h3>
       <p>Limites e possibilidades de conexão entre as entidades dentro do modelo de dados.</p><br />
       <ul class="list">
-        <li>Um <span>Cliente</span> pode fazer N <span>Pedidos</span>.</li>
-        <li>Um <span>Pedido</span> pode conter N <span>Itens (pizzas ou bebidas)</span>.</li>
-        <li>Um <span>Motoqueiro</span> pode entregar N <span>Pedidos</span>.</li>
+        <li>Um <span>Cliente</span> pode fazer "N" <span>Pedidos</span>.</li>
+        <li>Um <span>Cliente</span> pode ter "N" <span>Telefones_Clientes</span>.</li>
+        <li>Um <span>Pedido</span> pode conter "N" <span>Itens_Pedido (pizzas ou bebidas)</span>.</li>
+        <li>Uma <span>Pizza</span> pode ter "N" <span>Ingredientes_Pizza</span>.</li>
+        <li>Um <span>Motoqueiro</span> pode entregar "N" <span>Pedidos</span>.</li>
+        <li>Um <span>Motoqueiro</span> pode ter "N" <span>Telefones_Motoqueiros</span>.</li>
+        <li>Um <span>Pagamento</span> pode ter "N" <span>Formas_Pagamento</span>.</li>
       </ul>
 
     </section>
