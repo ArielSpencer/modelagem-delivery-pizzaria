@@ -96,7 +96,6 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* height: 300%; */
 }
 
 .banner {
@@ -106,6 +105,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 10vh;
 }
 
 .banner__content {
